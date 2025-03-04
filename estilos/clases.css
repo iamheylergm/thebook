@@ -1,0 +1,208 @@
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-grow: 1;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+    opacity: 0.7;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    right: 0;
+    background: #222;
+    min-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    z-index: 100;
+}
+
+.menu-content a {
+    color: white;
+    display: flex;
+    align-items: center;  /* Alinea el texto y el icono verticalmente */
+    white-space: nowrap;
+    max-width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-content a:hover {
+    background: #444;
+}
+
+.menu-icon {
+    width: 20px; /* Ajusta el tamaño del icono dentro del menú */
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.menu-container.active .menu-content {
+    display: block;
+}
+
+.contenedor-titulos-imagen {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.titulos-principales {
+        text-align: center;
+        flex: 1;
+        max-width: 600px; /* Asegura que el ancho sea uniforme */
+        margin: 0 auto; /* Centra el bloque */
+        margin-right: 80px;
+}
+
+.portada {
+    border-radius: 3.5px;
+    border-style: solid;
+    border-color: rgb(172, 162, 162);
+    border-width: 1.5px;
+    border-right: 0;
+    border-left-width: 8px;
+    height: auto;
+}
+
+.comprar {
+    width: 400%; /* Ocupa todo el ancho disponible */
+    max-width: 280px; /* Limitar el tamaño máximo */
+    padding: 8px;
+    background: rgba(0, 153, 255, 0.85); /* Color de fondo similar al de enviar */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Efecto hover en el botón Comprar libro */
+.comprar:hover {
+    background: rgba(0, 153, 255, 1); /* Color más intenso en hover */
+    box-shadow: 0 0 12px rgba(0, 153, 255, 0.6); /* Sombra al hacer hover */
+}
+
+/* Efecto al hacer clic en el botón Comprar libro */
+.comprar:active {
+    transform: scale(0.98); /* Reducción en tamaño al hacer clic */
+}
+
+.icon-informacion {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sobre-el-libro {
+    display: flex;
+    padding-top: 60px;
+    align-items: center;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espaciado entre el icono y el contenido */
+    border-top: 20px;
+}
+
+.info-libro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info-libro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.cuadro {
+    width: 100%; /* Ajusta el ancho para que sea responsivo */
+    max-width: 600px; /* Limita el tamaño máximo */
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1); /* Efecto vidrio esmerilado */
+    margin-bottom: 10px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px); /* Suaviza el fondo */
+}
+
+.cuadro::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+/* Efecto al enfocar */
+.cuadro:focus {
+    border-color: rgba(0, 153, 255, 0.8);
+    box-shadow: 0 0 8px rgba(0, 153, 255, 0.6);
+}
+
+.titulo-version {
+    margin-top: 40px;
+    color: white;
+}
+
+.version {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.atras {
+    margin-top: 30px;
+}
+
+.año {
+    margin-top: 100px;
+    padding-bottom: 40px;
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 15px;
+}
+
+.border-bottom {
+    padding: 16px;
+}
